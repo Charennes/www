@@ -1,0 +1,15 @@
+// Removing this comment will cause the global sass to not be compiled (file needs an empty line at the top)
+body
+  margin: 0
+  margin-top: var(--nav-height)
+  padding: 4em 0
+  min-height: calc(100vh - 8em - var(--nav-height))
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+main
+  width: Min(80ch, 95vw)
+  *
+    max-width: 100% // To prevent content from overflowing
