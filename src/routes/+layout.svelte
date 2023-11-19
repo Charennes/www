@@ -1,5 +1,5 @@
 <script>
-    import '$lib/sass/global.sass'
+    import '$lib/sass/main.sass'
 </script>
 
 <main>
