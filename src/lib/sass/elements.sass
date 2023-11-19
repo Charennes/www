@@ -1,2 +1,66 @@
 html
   font-family: var(--font-family)
+  background-color: var(--bg-color)
+  color: var(--fg-color)
+
+::selection
+  background-color: var(--selection-bg-color)
+  color: var(--selection-fg-color)
+
+p
+  margin: 0.25rem
+
+b, strong
+  color: var(--emphasis-color)
+
+a
+  color: var(--link-color)
+
+ul > li::marker
+  color: var(--emphasis-color)
+  content: "- "
+
+// Prevent footnote references from adding height to the line
+// More information: https://stackoverflow.com/questions/1530685/hoe-can-i-keep-consistent-line-height-with-superscript-elements
+sup
+  line-height: 0
+
+img
+  border: 1px solid var(--emphasis-color)
+
+blockquote
+  p
+    margin: 0
+  cite
+    // Align the citation to the right
+    width: 100%
+    text-align: right
+    font-size: 0.8em
+    font-style: normal
+    color: var(--emphasis-color)
+  cite::before
+    content: "— "
+
+h1, h2, h3, h4, h5, h6
+  margin: 0
+  font-weight: bold
+  color: var(--emphasis-color)
+
+h1
+  font-size: 1.5rem
+
+h2
+  font-size: 1.25rem
+
+h3
+  font-size: 1.125rem
+
+h4
+  font-size: 1rem
+
+h5
+  font-size: 0.875rem
+
+h6
+  font-size: 0.75rem
+
